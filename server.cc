@@ -76,7 +76,7 @@ ParallelWork *parallel_fetch_idx(const char *body, size_t size, void *context) {
             // url,title
             std::string url = match_results.str(1);
             std::string title = match_results.str(2);
-            std::string url_baobian = "http://baobianapi.pullword.com:9091/get.php";
+            // std::string url_baobian = "http://baobianapi.pullword.com:9091/get.php";
             WFHttpTask *task = WFTaskFactory::create_http_task(BAOBIAN_API,
                                                                REDIRECT_MAX,
                                                                RETRY_MAX,
